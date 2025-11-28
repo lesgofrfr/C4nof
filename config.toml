@@ -1,0 +1,15 @@
+# Parse a simple TOML configuration
+import toml
+
+config = '''
+[server]
+host = "localhost"
+port = 8080
+'''
+
+try:
+    parsed_config = toml.loads(config)
+    print(f"Server host: {parsed_config['server']['host']}")
+    print(f"Server port: {parsed_config['server']['port']}")
+except Exception as e:
+    print(f"Error parsing TOML: {e}")
