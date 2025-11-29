@@ -1,0 +1,8 @@
+@@ -1,7 +0,0 @@
+{
+  "version": 3,
+  "framework": "static",
+  "builds": [
+    { "src": "Em"use": "@vercel/static" }
+  ]
+}
